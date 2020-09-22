@@ -9,7 +9,7 @@ module.exports = {
         const helpContent = new Discord.MessageEmbed()
             .setColor('#f2ed5c')
             .setTitle('Github', 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png')
-            .setURL('https://github.com/LucasChlz/AmoungUs-DiscordBot')
+            .setURL('https://github.com/LucasChlz/AmoungusBot')
             .setThumbnail('https://i.pinimg.com/originals/d7/51/7e/d7517e1351db1bec62d551822484b542.png')
             .addFields(
                 { name: `${prefix}game`, value: 'creates two rooms needed to play and two roles'},

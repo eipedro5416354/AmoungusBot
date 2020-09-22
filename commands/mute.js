@@ -4,7 +4,7 @@ const { channelLive, channelGhost } = require('../config.json');
 module.exports = {
     name: 'mute',
     description: 'mute all in specific channel',
-    execute(message, args)
+    async execute(message, args)
     {
         const voiceChannel = message.member.voice.channel.name;
 
@@ -25,9 +25,8 @@ module.exports = {
     
         message.channel.send(reunionEmbed);
         
-        voiceUsers.forEach(user => {
+        await voiceUsers.forEach(user => {
             const verifyGhost = user.roles.cache.find(d => d.name === "Ghost");
-
             if (!verifyGhost) {
                 user.voice.setMute(true);
                 user.roles.add(verifyRole);

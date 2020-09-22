@@ -19,7 +19,7 @@ module.exports = {
             voiceUsers.forEach(user => {
                 user.voice.setMute(false);
                 user.roles.remove(verifyGhost);
-                verifyUser.voice.setChannel(getAmoung.id);
+                user.voice.setChannel(getAmoung.id);
             });
         } else  {
             verifyUser.roles.add(verifyGhost);

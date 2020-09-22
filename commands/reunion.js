@@ -4,7 +4,7 @@ const { channelLive, channelGhost } = require('../config.json');
 module.exports = {
     name: 'reunion',
     description: 'unmute everyone in a meeting',
-    execute(message, args)
+    async execute(message, args)
     {
         const voiceChannel = message.member.voice.channel.name;
 
@@ -18,7 +18,7 @@ module.exports = {
         const voiceUsers = message.member.voice.channel.members;
         const getAmoung = message.guild.channels.cache.find(channel => channel.name === channelLive);
         
-        voiceUsers.forEach(user => {
+        await voiceUsers.forEach(user => {
             const verifyGhost = user.roles.cache.find(d => d.name === "Ghost");
 
             if (!verifyGhost) {
