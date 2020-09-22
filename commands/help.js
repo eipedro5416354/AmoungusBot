@@ -18,7 +18,7 @@ module.exports = {
                 { name: `${prefix}ghost`, value: 'when you die you use this command to go to the cemetery'},
                 { name: `${prefix}end`, value: 'you have two parameters ["roles, channels"] where it excludes the two channels or the two "Muted and Ghost" roles'}
             )
-            .setFooter('Developed By Schelz#333');
+            .setFooter('Developed By Schelz#3323');
 
             message.channel.send(helpContent);
 
