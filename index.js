@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const client = new Discord.Client();
+const client = new Discord.Client({ disableMentions: 'none'});
 const { prefix, token } = require('./config.json');
 
 client.commands = new Discord.Collection();
@@ -17,7 +17,7 @@ client.once('ready', () => {
 
 client.on('ready', () => {
     setInterval(() => 
-    client.user.setActivity('Hello1')
+    client.user.setActivity('Hello')
     ,2000);
  
 });

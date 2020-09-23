@@ -16,6 +16,7 @@ module.exports = {
                 { name: `${prefix}mute`, value: 'changes all players in the room and moves everyone with the ghost position to the cemetery'},
                 { name: `${prefix}reunion`, value: 'demute all players and make all ghosts return to the room but mutated'},
                 { name: `${prefix}ghost`, value: 'when you die you use this command to go to the cemetery'},
+                { name: `${prefix}ping`, value: 'shows the bot ping'},
                 { name: `${prefix}end`, value: 'you have two parameters ["roles, channels"] where it excludes the two channels or the two "Muted and Ghost" roles'}
             )
             .setFooter('Developed By Schelz#3323');
