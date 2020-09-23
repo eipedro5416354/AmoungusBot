@@ -14,6 +14,7 @@ module.exports = {
             .addFields(
                 { name: `${prefix}game`, value: 'creates two rooms needed to play and two roles'},
                 { name: `${prefix}mute`, value: 'changes all players in the room and moves everyone with the ghost position to the cemetery'},
+                { name: `${prefix}room`, value: 'you need to pass a parameter which is the room code'},
                 { name: `${prefix}reunion`, value: 'demute all players and make all ghosts return to the room but mutated'},
                 { name: `${prefix}ghost`, value: 'when you die you use this command to go to the cemetery'},
                 { name: `${prefix}ping`, value: 'shows the bot ping'},
