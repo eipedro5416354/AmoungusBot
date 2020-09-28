@@ -16,10 +16,7 @@ client.once('ready', () => {
 });
 
 client.on('ready', () => {
-    setInterval(() => 
-    client.user.setActivity('Hello')
-    ,2000);
- 
+    client.user.setActivity('%help');
 });
 
 client.on('message', message => {
