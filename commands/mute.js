@@ -9,7 +9,7 @@ module.exports = {
         const voiceChannel = message.member.voice.channel.name;
 
         if (voiceChannel != channelLive && voiceChannel != channelGhost) {
-            return message.channel.send('you need to be on a voice channel called "Amoung Us" OR "Cemetery" ');
+            return message.channel.send('you need to be on a voice channel called "「🎭」Among Us" OR "Cemetery" ');
         }
 
         const voiceUsers = message.member.voice.channel.members;
